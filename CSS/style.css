@@ -1,0 +1,212 @@
+* {
+  font-family: "Inter", serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #fff7f2;
+}
+
+.schoolfindlogo {
+  color: #ed6c80;
+  font-weight: 600;
+}
+.schoolfindlogo:hover {
+  color: #ed6c80;
+}
+.nav-link {
+  color: black !important;
+}
+.best_way_container {
+  width: 60%;
+  margin: 50px auto 0 auto;
+}
+.best_way_container .title {
+  font-family: "Domine";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 86px;
+  text-align: center;
+  color: #115c40;
+}
+.best_way_container .description {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #444444;
+  margin-top: 30px;
+}
+.searchByTitle {
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+  font-weight: 500;
+  font-size: 14px;
+}
+.searchByTitle .active {
+  border-bottom: 2px solid #ed6c80 !important;
+}
+
+.searchByInput {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+}
+
+.searchByInput input {
+  flex: 1;
+  border: 0;
+  outline: 0;
+}
+.Find_loaction i {
+  color: #ed9016;
+  font-size: 18px;
+}
+.Find_loaction a {
+  text-decoration: none;
+  color: #444444;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.topBG {
+  background-image: url("../images/Union.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+
+  /* gap: 20px; */
+}
+.topBG img {
+  width: 100%;
+}
+
+/* ************* */
+
+.whatWeOffer__Container {
+  margin: 50px;
+}
+.whatWeOffer__Container .card-img-top {
+  height: 200px;
+}
+
+.whatWeOffer__Container .card-title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 34px;
+  text-align: center;
+  color: #115c40;
+}
+.whatWeOffer__Container .card-desc {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #333333;
+}
+.topBest {
+  background: #0a3b29;
+  color: white;
+}
+.topBest img {
+  width: 115px;
+}
+.topBest h5 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  color: #ed9016;
+}
+
+.ideationBanner {
+  background-color: #ffc260;
+}
+
+.slider {
+  /* height: 250px; */ 
+  position: relative; 
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+.slide-track {
+  display: flex;
+  gap: 40px;
+  width: calc(450px * 10);
+ padding: 30px 0;
+}
+.track1 {
+  animation: scroll 40s linear infinite;
+}
+.track2 {
+  animation: scroll 40s linear infinite;
+  animation-direction: reverse;
+}
+.slide-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-450px * 5));
+  }
+}
+
+.slide {
+  /* height: ; */
+  width: 400px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  perspective: 100px;
+  overflow: hidden;  
+  background: #ffffff;
+  box-shadow: 0px 8px 36px  rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+}
+
+ 
+.whereToStart {
+  background: #e6f2ff;
+}
+.whereToStart .btn-primary {
+  background-color: #60abfb !important;
+  border: 0;
+}
+
+.footerLink {
+  color: #115c40;
+  text-decoration: none;
+}
+.bar {
+  padding: 9px;
+  border-bottom: 2px solid rgb(218, 215, 215);
+}
+
+@media screen and (max-width: 576px) {
+  .best_way_container {
+    width: 90%;
+  }
+  .best_way_container .title {
+    font-size: 40px;
+    line-height: 56px;
+    margin-top: 1px;
+  }
+  .best_way_container .description {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .whatWeOffer__Container {
+    margin: 50px 5px;
+  }
+}
