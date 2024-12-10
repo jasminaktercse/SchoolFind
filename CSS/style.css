@@ -130,8 +130,8 @@ header {
 }
 
 .slider {
-  /* height: 250px; */ 
-  position: relative; 
+  /* height: 250px; */
+  position: relative;
   display: grid;
   place-items: center;
   overflow: hidden;
@@ -140,7 +140,7 @@ header {
   display: flex;
   gap: 40px;
   width: calc(450px * 10);
- padding: 30px 0;
+  padding: 30px 0;
 }
 .track1 {
   animation: scroll 40s linear infinite;
@@ -169,13 +169,12 @@ header {
   align-items: center;
   padding: 15px;
   perspective: 100px;
-  overflow: hidden;  
+  overflow: hidden;
   background: #ffffff;
-  box-shadow: 0px 8px 36px  rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 8px 36px rgba(0, 0, 0, 0.1);
   border-radius: 16px;
 }
 
- 
 .whereToStart {
   background: #e6f2ff;
 }
@@ -211,12 +210,25 @@ header {
   }
 }
 
-
-@media screen and (min-width:1441px) {
-  main{ 
-    
-    width: 1440px;
-    margin: auto;
+@media screen and (min-width: 1441px) {
+  header {
+    width: 100%;
   }
   
+  .top_nav,
+  .best_way_container,
+  .topBG > div,
+  .whatWeOffer__Container,
+  .CTA1,
+  .CTA2,
+  .topBestContainer,
+  .peopleTalking,
+  .schoolFind__containers,
+  .whereToStart > div, footer {
+    width: 1440px;
+    margin: auto !important;
+  }
+  .whatWeOffer__Container {
+    margin-top: 70px;
+  }
 }
